@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 2239394385
     locked: 0
+  - name: Decorations
+    uniqueID: 1337410297
+    locked: 0
   - name: Water
     uniqueID: 1350255227
     locked: 0
