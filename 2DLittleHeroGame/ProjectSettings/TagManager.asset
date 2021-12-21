@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -11,12 +12,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Ladders
+  - Player
+  - Decorations
+  - Background
+  - Enemies
   - 
   - 
   - 
@@ -47,11 +48,20 @@ TagManager:
   - name: Decorations
     uniqueID: 1337410297
     locked: 0
+  - name: Bouncing
+    uniqueID: 1915784743
+    locked: 0
+  - name: Ladders
+    uniqueID: 1089816067
+    locked: 0
   - name: Water
     uniqueID: 1350255227
     locked: 0
   - name: Platforms
     uniqueID: 3675896579
+    locked: 0
+  - name: Enemies
+    uniqueID: 1004342233
     locked: 0
   - name: Player
     uniqueID: 4213574937
