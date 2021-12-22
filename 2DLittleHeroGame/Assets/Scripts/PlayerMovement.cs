@@ -124,6 +124,7 @@ public class PlayerMovement : MonoBehaviour
       myRigidbody.velocity = new Vector2(0f, 15f);
       SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
       spriteRenderer.color = new Vector4(0.4f, 0.4f, 0.2f, 1f);
+      FindObjectOfType<GameSession>().ProcessPlayerDeath();
     }
   }
 }

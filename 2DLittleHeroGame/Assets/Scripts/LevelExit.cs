@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelExit : MonoBehaviour
 {
   [SerializeField] float levelLoadDelay = 1f;
-  string nextLevel = "Level 2";
 
   private void OnTriggerEnter2D(Collider2D other)
   {
