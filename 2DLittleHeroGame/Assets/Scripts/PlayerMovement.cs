@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
   [SerializeField] float runSpeed = 5f;
   [SerializeField] float jumpSpeed = 14f;
   [SerializeField] float climbSpeed = 5f;
+  [SerializeField] GameObject bullet;
+  [SerializeField] Transform gun;
 
   Vector2 moveInput;
   Rigidbody2D myRigidbody;
@@ -35,6 +37,15 @@ public class PlayerMovement : MonoBehaviour
     Die();
 
   }
+  void OnFire(InputValue value)
+  {
+    if (!isAlive) { return; }
+    Instantiate(bullet, gun.position, transform.rotation);
+    if (value.isPressed)
+    {
+
+    }
+  }
 
   void OnMove(InputValue value)
   {
@@ -55,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
       myRigidbody.velocity += new Vector2(0f, jumpSpeed);
     }
   }
+
+
 
   void Run()
   {
@@ -97,15 +110,20 @@ public class PlayerMovement : MonoBehaviour
   //   if (myCapsuleColliders[0].IsTouchingLayers(LayerMask.GetMask("Enemies")))
   //   {
   //     playerInput.DeactivateInput();
-  //     Debug.Log("Enemy!!!!");
   //   }
   // }
 
   void Die()
   {
-    if (myCapsuleColliders[0].IsTouchingLayers(LayerMask.GetMask("Enemies")))
+    if (myCapsuleColliders[0].IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")) || myCapsuleColliders[1].IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
+
+
     {
       isAlive = false;
+      myAnimator.SetTrigger("Dying");
+      myRigidbody.velocity = new Vector2(0f, 15f);
+      SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+      spriteRenderer.color = new Vector4(0.4f, 0.4f, 0.2f, 1f);
     }
   }
 }
