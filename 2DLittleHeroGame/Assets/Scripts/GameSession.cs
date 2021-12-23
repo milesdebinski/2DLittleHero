@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameSession : MonoBehaviour
 {
   [SerializeField] int playerLives = 3;
-  [SerializeField] int deathDelay = 3;
   [SerializeField] int score = 0;
+  [SerializeField] int deathDelay = 3;
 
   [SerializeField] TextMeshProUGUI livesText;
   [SerializeField] TextMeshProUGUI scoreText;
@@ -48,8 +48,8 @@ public class GameSession : MonoBehaviour
     }
     else
     {
-      StartCoroutine(ResetGameSession());
       //   ResetGameSession();
+      StartCoroutine(ResetGameSession());
     }
   }
 

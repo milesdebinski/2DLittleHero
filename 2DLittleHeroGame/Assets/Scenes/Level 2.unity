@@ -6048,6 +6048,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2001077110, guid: 637668792200e4b48bd745f86e2ad5b1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 91f80938941e931478792e3d102f8f66, type: 2}
+    - target: {fileID: 2001077110, guid: 637668792200e4b48bd745f86e2ad5b1, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7135298408573646229, guid: 91f80938941e931478792e3d102f8f66, type: 2}
     - target: {fileID: 882393792458492118, guid: 637668792200e4b48bd745f86e2ad5b1, type: 3}
       propertyPath: m_Name
       value: Game Session

@@ -66,10 +66,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 999999
+  m_text: 99999
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 91f80938941e931478792e3d102f8f66, type: 2}
-  m_sharedMaterial: {fileID: 7135298408573646229, guid: 91f80938941e931478792e3d102f8f66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c024a925fcb2cd54db3b6096a4289674, type: 2}
+  m_sharedMaterial: {fileID: 4478442049745869369, guid: c024a925fcb2cd54db3b6096a4289674, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 160.4
-  m_fontSizeBase: 160.4
+  m_fontSize: 162.12
+  m_fontSizeBase: 162.12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -389.3114, y: -11.317261, z: -45.268784, w: -15.843994}
+  m_margin: {x: -495.00928, y: -11.317261, z: -45.268784, w: -15.843994}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -305,8 +305,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 99
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 91f80938941e931478792e3d102f8f66, type: 2}
-  m_sharedMaterial: {fileID: 7135298408573646229, guid: 91f80938941e931478792e3d102f8f66, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c024a925fcb2cd54db3b6096a4289674, type: 2}
+  m_sharedMaterial: {fileID: 4478442049745869369, guid: c024a925fcb2cd54db3b6096a4289674, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -11.317261, z: -45.268784, w: -15.843994}
+  m_margin: {x: 0, y: -11.317261, z: -125.9583, w: -15.843994}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -418,5 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLives: 3
+  deathDelay: 3
+  score: 0
   livesText: {fileID: 2001077110}
   scoreText: {fileID: 375907035}
